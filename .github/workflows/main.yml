@@ -12,13 +12,13 @@ jobs:
       - name: Send mail
         uses: juanformoso/action-send-mail@1
         with:
-          server_address: smtp.gmail.com
+          server_address: smtp.office365.com
           server_port: 587
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
           subject: Github Actions job result
           # Comma separated values
           to: manojp1988@gmail.com
-          from: support@fastfacts.co
+          from: manoj.periathambi@spectrags.com
           body: Build job of ${{github.repository}} completed successfully!
           cc: manoj.periathambi@newgen.co
